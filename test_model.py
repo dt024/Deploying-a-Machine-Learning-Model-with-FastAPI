@@ -1,3 +1,5 @@
+"Unit tests for model and training/inference processes"
+
 import pytest, os, logging, pickle
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -5,6 +7,11 @@ from sklearn.exceptions import NotFittedError
 
 from starter.starter.ml.model import inference, compute_model_metrics
 from starter.starter.ml.data import process_data
+
+logging.basicConfig(filename='test_logging.log',
+                    level=logging.INFO,
+                    filemode='a',
+                    format='%(name)s - %(levelname)s - %(message)s')
 
 
 """
