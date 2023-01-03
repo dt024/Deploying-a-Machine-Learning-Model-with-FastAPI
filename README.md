@@ -1,3 +1,24 @@
+# Project Overview
+This is the project #3 of Udacity's ML DevOps Engineer nanodegree. Objective is to deploy a ML model with FastAPI on Heroku.
+
+
+The project follows these steps:
+- Train a ML model on a classification task to predict salary group of individuals based on 14 various characteristics. 
+- Expose the model for inference using a FastAPI app
+- Deploy the app using Heroku to provide inference endpoint
+- Implement Continuous Integration / Continuous Deployment workflow using Github actions, github repository and Heroku integration with Github. The app is only deployed if integrated, automated, tests are validated by Github actions upon modifications
+ 
+ 
+ # Images                                            
+- inference FastAPI
+ ![](image/example.png)
+  
+ - CI/CD Github actions validation
+ ![](image/continuous_integration.png)
+
+ - Heroku deployment: Because it requires payment method, and thus, I cannot create the app on heroku for now, but I still create Profile and PostToAPI.py file.
+
+
 Working in a command line environment is recommended for ease of use with git and dvc. If on Windows, WSL1 or 2 is recommended.
 
 # Environment Set up
