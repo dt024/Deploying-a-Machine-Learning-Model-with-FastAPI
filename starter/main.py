@@ -1,11 +1,15 @@
+from __future__ import absolute_import
 from fastapi import FastAPI, HTTPException
 from typing import Union, Optional
 # BaseModel from Pydantic is used to define data objects
 from pydantic import BaseModel
 import pandas as pd
-import os, pickle
-from starter.ml.data import process_data
-
+import os, pickle,sys
+try:
+    from .starter.ml.data import process_data
+except:
+    from starter.ml.data import process_data
+    
  # path to saved artifacts
 savepath = './starter/model'
 filename = ['trained_model.pkl', 'encoder.pkl', 'labelizer.pkl']
