@@ -1,0 +1,121 @@
+root - INFO - Start training RandomForestClassifier
+root - INFO - ********* Finish training! ***********
+root - INFO - Model saved to disk: ../model
+root - INFO - Training params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 2, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': 0, 'verbose': 0, 'warm_start': False}
+root - INFO - precision:1.000, recall:0.003, fbeta:0.006
+root - INFO - Performance on slice workclass
+root - INFO -       feature value    feature n_samples precision recall     fbeta
+0                 ?  workclass       376       1.0    0.0       0.0
+1           Private  workclass      4559       1.0    0.0       0.0
+2  Self-emp-not-inc  workclass       516       1.0    0.0       0.0
+3         Local-gov  workclass       385       1.0    0.0       0.0
+4       Federal-gov  workclass       179       1.0    0.0       0.0
+5         State-gov  workclass       278       1.0    0.0       0.0
+6      Self-emp-inc  workclass       218       1.0   0.04  0.076923
+7      Never-worked  workclass         1       1.0    1.0       1.0
+8       Without-pay  workclass         1       1.0    1.0       1.0
+root - INFO - Performance on slice education
+root - INFO -    feature value    feature n_samples precision    recall     fbeta
+0           11th  education       229       1.0       0.0       0.0
+1   Some-college  education      1469       1.0       0.0       0.0
+2      Bachelors  education      1070       1.0  0.008949  0.017738
+3        HS-grad  education      2094       1.0       0.0       0.0
+4      Doctorate  education       100       1.0       0.0       0.0
+5      Assoc-voc  education       273       1.0       0.0       0.0
+6        Masters  education       332       1.0  0.005405  0.010753
+7     Assoc-acdm  education       199       1.0       0.0       0.0
+8            9th  education       101       1.0       0.0       0.0
+9        7th-8th  education       131       1.0       0.0       0.0
+10          12th  education        86       1.0       0.0       0.0
+11          10th  education       192       1.0       0.0       0.0
+12   Prof-school  education       113       1.0       0.0       0.0
+13       5th-6th  education        79       1.0       0.0       0.0
+14     Preschool  education         9       1.0       1.0       1.0
+15       1st-4th  education        36       1.0       0.0       0.0
+root - INFO - Performance on slice marital-status
+root - INFO -            feature value         feature n_samples precision    recall    fbeta
+0          Never-married  marital-status      2067       1.0       0.0      0.0
+1     Married-civ-spouse  marital-status      3060       1.0  0.003704  0.00738
+2               Divorced  marital-status       897       1.0       0.0      0.0
+3                Widowed  marital-status       191       1.0       0.0      0.0
+4              Separated  marital-status       201       1.0       0.0      0.0
+5  Married-spouse-absent  marital-status        91       1.0       0.0      0.0
+6      Married-AF-spouse  marital-status         6       1.0       0.0      0.0
+root - INFO - Performance on slice occupation
+root - INFO -         feature value     feature n_samples precision    recall     fbeta
+0                   ?  occupation       377       1.0       0.0       0.0
+1               Sales  occupation       678       1.0       0.0       0.0
+2      Prof-specialty  occupation       799       1.0       0.0       0.0
+3        Tech-support  occupation       189       1.0       0.0       0.0
+4        Craft-repair  occupation       865       1.0       0.0       0.0
+5    Transport-moving  occupation       334       1.0       0.0       0.0
+6   Handlers-cleaners  occupation       268       1.0       0.0       0.0
+7       Other-service  occupation       635       1.0       0.0       0.0
+8        Adm-clerical  occupation       791       1.0       0.0       0.0
+9     Exec-managerial  occupation       838       1.0  0.012136  0.023981
+10  Machine-op-inspct  occupation       398       1.0       0.0       0.0
+11    Protective-serv  occupation       112       1.0       0.0       0.0
+12    Farming-fishing  occupation       200       1.0       0.0       0.0
+13    Priv-house-serv  occupation        28       1.0       1.0       1.0
+14       Armed-Forces  occupation         1       1.0       1.0       1.0
+root - INFO - Performance on slice relationship
+root - INFO -     feature value       feature n_samples precision    recall    fbeta
+0       Unmarried  relationship       669       1.0       0.0      0.0
+1            Wife  relationship       344       1.0       0.0      0.0
+2         Husband  relationship      2672       1.0  0.004223  0.00841
+3       Own-child  relationship      1027       1.0       0.0      0.0
+4   Not-in-family  relationship      1623       1.0       0.0      0.0
+5  Other-relative  relationship       178       1.0       0.0      0.0
+root - INFO - Performance on slice race
+root - INFO -         feature value feature n_samples precision    recall     fbeta
+0               White    race      5575       1.0  0.003524  0.007022
+1               Black    race       617       1.0       0.0       0.0
+2  Amer-Indian-Eskimo    race        61       1.0       0.0       0.0
+3               Other    race        53       1.0       0.0       0.0
+4  Asian-Pac-Islander    race       207       1.0       0.0       0.0
+root - INFO - Performance on slice sex
+root - INFO -   feature value feature n_samples precision    recall     fbeta
+0          Male     sex      4364       1.0  0.003751  0.007474
+1        Female     sex      2149       1.0       0.0       0.0
+root - INFO - Performance on slice native-country
+root - INFO -                  feature value         feature n_samples precision    recall     fbeta
+0                United-States  native-country      5825       1.0  0.003489  0.006954
+1                      England  native-country        18       1.0       0.0       0.0
+2                       France  native-country         4       1.0       0.0       0.0
+3                        Haiti  native-country        10       1.0       0.0       0.0
+4                      Germany  native-country        28       1.0       0.0       0.0
+5                            ?  native-country       119       1.0       0.0       0.0
+6                  Puerto-Rico  native-country        22       1.0       0.0       0.0
+7                  Philippines  native-country        34       1.0       0.0       0.0
+8                     Columbia  native-country        17       1.0       1.0       1.0
+9                        Italy  native-country        11       1.0       0.0       0.0
+10                       India  native-country        23       1.0       0.0       0.0
+11                      Taiwan  native-country         8       1.0       0.0       0.0
+12                       China  native-country        21       1.0       0.0       0.0
+13                      Mexico  native-country       131       1.0       0.0       0.0
+14                    Portugal  native-country        11       1.0       0.0       0.0
+15                   Guatemala  native-country        16       1.0       0.0       0.0
+16                      Greece  native-country         8       1.0       0.0       0.0
+17                 El-Salvador  native-country        19       1.0       1.0       1.0
+18                        Iran  native-country         6       1.0       0.0       0.0
+19                       Japan  native-country        11       1.0       0.0       0.0
+20                     Ecuador  native-country         6       1.0       0.0       0.0
+21             Trinadad&Tobago  native-country         7       1.0       1.0       1.0
+22                       South  native-country        17       1.0       0.0       0.0
+23                     Vietnam  native-country        11       1.0       0.0       0.0
+24                        Cuba  native-country        17       1.0       0.0       0.0
+25                      Canada  native-country        18       1.0       0.0       0.0
+26                        Laos  native-country         6       1.0       1.0       1.0
+27                      Poland  native-country        11       1.0       0.0       0.0
+28                        Peru  native-country         7       1.0       1.0       1.0
+29                        Hong  native-country         6       1.0       0.0       0.0
+30                  Yugoslavia  native-country         4       1.0       0.0       0.0
+31          Dominican-Republic  native-country        14       1.0       1.0       1.0
+32                     Hungary  native-country         6       1.0       0.0       0.0
+33                   Nicaragua  native-country         7       1.0       1.0       1.0
+34                     Jamaica  native-country        19       1.0       0.0       0.0
+35                     Ireland  native-country         5       1.0       0.0       0.0
+36                    Cambodia  native-country         4       1.0       0.0       0.0
+37                    Honduras  native-country         4       1.0       1.0       1.0
+38                    Thailand  native-country         1       1.0       1.0       1.0
+39  Outlying-US(Guam-USVI-etc)  native-country         1       1.0       1.0       1.0
