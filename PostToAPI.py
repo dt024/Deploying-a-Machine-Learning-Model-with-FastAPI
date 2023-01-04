@@ -4,7 +4,7 @@ import requests
 import json
 
 #url = "enter heroku web app url here"
-url = "https://udacity-sec4.herokuapp.com/inference"
+url = "http://https://udacity-project4.onrender.com/inference"
 
 
 # explicit the sample to perform inference on
